@@ -1,0 +1,5 @@
+<h3>Satellite Counts:</h3>
+<div class="counts">
+    <div>Total: <span [class.zero]='satellites.length===0'>{{satellites.length}}</span></div>
+    <div *ngFor='let t of typeList'>{{t.satType}}: <span>{{t.satTypeCount}}</span></div>
+ </div>
